@@ -1,17 +1,43 @@
 <header id="nav-container">
     <nav id="navbar">
-        <span id="web-name"><a href="#">Anime4all</a></span>
- 
-        <ul>
-            <li><a routerLink="home">Inicio</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Animes</a></li>
-            <li><a href="#">Productos</a></li>
-        </ul>
+        <!--Navigation web logo-->
+        <div id="nav-web-logo">
+            <a href="#">Anime4all</a>
+        </div>
 
-        <ul>
-            <li><a href="#">usuario</a></li>
-            <li><a href="#">nombre de usuario</a></li>
-        </ul>
+        <!--Navigation links-->
+        <div id="navigation-links" class="nav-links">
+            <ul>
+                <li><a routerLink="home">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Productos</a></li>
+            </ul>
+        </div>
+
+
+        <!--User links-->
+        <div id="user-links" class="nav-links">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img id="user-nav-icon" src="../../../../assets/icons/navbar/person-circle.svg" alt="User icon">
+                    </a>
+                </li>
+                <li><a href="#">User Name</a></li>
+            </ul>
+
+            <!-- Search bar
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            -->
+
+
+            <button  id="menu-btn-down">
+                <img src="../../../../assets/icons/navbar/list.svg" alt="menu down icon">
+            </button>
+        </div>
     </nav>
 </header>

@@ -1,54 +1,101 @@
-/*Navbar*/
-#nav-container{
+/*NAvbar container*/
+#nav-container {
     width: 100%;
+    background-color: rgb(41, 127, 255);
+}
+
+/*Navbar*/
+#navbar {
     display: flex;
     flex-direction: row;
-    background-color: rgb(13, 110, 253);
+    justify-content: space-between;
+    height: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/*Nav web logo*/
+#nav-web-logo {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#navbar{
-    width: 100%;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#navbar ul{
-    display: flex;
-    flex-direction: row;
-    margin:0;
-    padding:0;
-    list-style:none;
-    text-align:center;
-}
-
-#navbar ul li{
-    padding: .5rem;
-}
-
-#navbar ul li a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
-}
-
-#navbar ul li a:hover{
-    color: white;
-}
-
-#web-name{
+#nav-web-logo a {
     font-size: 3rem;
-}
-
-#web-name a{
     color: black;
     text-decoration: none;
 }
 
-#web-name a:hover{
+#nav-web-logo a:hover {
     color: white;
+}
+
+/*Navbar navigation and user links*/
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links ul {
+    display: inherit;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inherit;
+    align-items: center;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+}
+
+/*Icons*/
+#user-nav-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#menu-btn-down {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Responsive*/
+@media(max-width:900px) {
+    #navigation-links {
+        display: none;
+    }
+
+    .nav-links{
+        flex-direction: row;
+    }
+
+    #menu-btn-down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        border: none;
+        background: none;
+    }
+
+    #menu-btn-down img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
