@@ -1,0 +1,43 @@
+/*Container*/
+#last-season-container{
+    border: 1px solid black;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/*Titulo del div*/
+#last-season-title{
+    display: flex;
+    flex-direction: row;
+}
+
+#last-season-title img{
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+/*Grid*/
+#last-season-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+/*Grid item*/
+.item{
+    width: 100%;
+    height: 15rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*Responsive*/
+@media(max-width:420px){
+    #last-season-container{
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
