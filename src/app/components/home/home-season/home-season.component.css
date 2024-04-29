@@ -1,7 +1,7 @@
 /*Container*/
 #last-season-container{
     border: 1px solid black;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -34,7 +34,7 @@
 }
 
 /*Responsive*/
-@media(max-width:420px){
+@media(max-width:600px){
     #last-season-container{
         
         margin-left: auto;

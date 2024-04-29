@@ -76,7 +76,7 @@
 }
 
 /*Responsive*/
-@media(max-width:900px) {
+@media(max-width:770px) {
     #navigation-links {
         display: none;
     }
@@ -97,5 +97,15 @@
     #menu-btn-down img{
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+@media(max-width:550px){
+    #user-links{
+        display: none;
+    }
+
+    #navbar{
+        justify-content: center;
     }
 }

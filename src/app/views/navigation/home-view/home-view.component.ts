@@ -3,6 +3,7 @@ import { NavbarComponent } from '../../../components/shared/navbar/navbar.compon
 import { HeroComponent } from '../../../components/home/hero/hero.component';
 import { HomeNewsComponent } from '../../../components/home/home-news/home-news.component';
 import { HomeSeasonComponent } from '../../../components/home/home-season/home-season.component';
+import { FooterComponent } from '../../../components/shared/footer/footer.component';
 
 @Component({
   selector: 'app-home-view',
@@ -11,7 +12,8 @@ import { HomeSeasonComponent } from '../../../components/home/home-season/home-s
     NavbarComponent,
     HeroComponent,
     HomeNewsComponent,
-    HomeSeasonComponent
+    HomeSeasonComponent,
+    FooterComponent
   ],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
