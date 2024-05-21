@@ -4,6 +4,7 @@ import { HeroComponent } from '../../../components/home/hero/hero.component';
 import { HomeNewsComponent } from '../../../components/home/home-news/home-news.component';
 import { HomeSeasonComponent } from '../../../components/home/home-season/home-season.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
+import { ValenComponent } from '../../../component/valen/valen.component';
 
 @Component({
   selector: 'app-home-view',
@@ -13,7 +14,8 @@ import { FooterComponent } from '../../../components/shared/footer/footer.compon
     HeroComponent,
     HomeNewsComponent,
     HomeSeasonComponent,
-    FooterComponent
+    FooterComponent,
+    ValenComponent
   ],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
