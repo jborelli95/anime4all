@@ -1,11 +1,11 @@
 <form id="register-form" [formGroup]="form" (ngSubmit)="userRegister()">
     <h3>Crear usuario</h3>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required="required" formControlName="email">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required="required" formControlName="name">
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" required="required" formControlName="password">
+    <label for="job">Job:</label>
+    <input type="text" id="job" required="required" formControlName="job">
 
     <button type="submit">Register</button>
 </form>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-user-registration-form',
@@ -14,8 +15,8 @@ export class UserRegistrationFormComponent implements OnInit{
 
   /**Variable formGroup donde vamos a a agrupar los distitnos input desde el formulario Html */
   form: FormGroup = this.fb.group({
-    email: "",
-    password: ""
+    name: "",
+    job: ""
   })
   
   ngOnInit(): void {
@@ -23,12 +24,16 @@ export class UserRegistrationFormComponent implements OnInit{
   }
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private userService: UserService
   ){}
 
   userRegister(){
-    console.log("Uusario registrado!!!");
-    console.log("El formulario es: ");
-    console.log(this.form.value);
+    const user = {
+      name: this.form.value.name,
+      job: this.form.value.job
+    }
+
+    this.userService.register(user);
   }
 }

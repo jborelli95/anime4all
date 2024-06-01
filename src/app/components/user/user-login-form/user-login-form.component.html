@@ -1,11 +1,11 @@
-<form id="login-form">
+<form id="login-form" [formGroup]="form" (ngSubmit)="login()">
     <h3>Logear Usuario</h3>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required="required">
+    <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required="required" formControlName="email">
 
     <label for="password">Password:</label>
-    <input type="password" id="password" required="required">
+    <input type="password" id="password" required="required" formControlName="password">
 
-    <button type="submit">Register</button>
+    <button type="submit">Logearse</button>
 </form>
